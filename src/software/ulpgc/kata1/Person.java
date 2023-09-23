@@ -13,7 +13,7 @@ public class Person {
     }
 
     public int getYears(){
-        Period period = Period.between(LocalDate.now(), Birthday);
+        Period period = Period.between(Birthday, LocalDate.now());
         return period.getYears();
     }
 
